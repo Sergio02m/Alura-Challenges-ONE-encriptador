@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        
+        <div class="caja">
+            <h1 ><img src="Imagenes/Logo.png" alt="Logo" class="logo"></h1>
+        </div>
+
+
+    </header>
+    
+
+    <main>
+
+        <div class="contenedor">
+
+            <section class="izquierdo">
+
+                <div>
+    
+                    <textarea id="ingresotexto" class="texto" required placeholder="Ingrese el texto aqui" ></textarea>
+    
+                </div>
+    
+                <div class="inferior">
+
+                    <div class="informaacion">
+
+                        <img src="Imagenes/Vector.png" alt="Alerta">
+                        <p id="advertencia" class="advertencia">Solo letras minúsculas sin acentos</p>
+
+                    </div>
+    
+                    <div class="botones">
+
+                        <button id="btnencriptar" class=" btn-encriptar">Encriptar</button>
+                        <button id="btndesencriptar" class=" btn-desencriptar">Desencriptar</button>
+
+                    </div>
+                    
+    
+                </div>
+    
+            </section>
+    
+            <section id="derecho" class="derecho">
+    
+                <img id="munheco" class="munheco" src="Imagenes/Muñeco.png" alt="Muñeco">
+                <textarea id="mensajefinal" class="mensaje-final" placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p id="textinfo" class="text-info">Ingrese el texto que desea encriptar o desencriptar</p>
+                <button id="btncopiar" class="btn-copiar oculto">Copiar</button>
+                
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>By: Sergio andrés Manrique Triana</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

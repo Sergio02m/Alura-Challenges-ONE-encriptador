@@ -1,0 +1,251 @@
+body {
+    background: #f3f5fc57;
+    font-family: 'Inter', sans-serif;
+}
+textarea {
+    font-family: 'Inter', sans-serif;
+}
+
+.caja {
+    width: 95%;
+    margin: auto;
+}
+
+.logo {
+
+    margin-top: 40px;
+}
+
+.contenedor {
+    width: 80.5%;
+    margin:auto 40px auto auto ;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: end;
+    min-height: calc(100vh - 91px - 72px);
+
+
+}
+
+.izquierdo {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.texto{
+    width: 80%;
+    font-size: 32px;
+    color: #0A3871;
+    resize: none;
+    background: none;
+    border: none;
+    outline: none;
+    
+}
+.texto::placeholder{
+    color: #0A3871;
+}
+
+.informaacion {
+    display: flex;
+}
+
+.advertencia {
+    padding: 2px;
+    display: inline-block;
+    color: #6c8097;
+    font-size: 12px;
+}
+
+.botones {
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.btn-encriptar {
+    max-width: 328px;
+    min-width: 160px;
+    width: 40%;
+    height: 67px;
+    border-radius:24px;
+    background-color: #0A3871;
+    color: #fefefe;
+    font-size: 16px;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+    transition: 1s all ;
+}
+
+.btn-encriptar:hover{
+    transform: scale(1.1);
+    background-color: #062246;
+    color: #fefefe;
+    border: none;
+}
+
+.btn-desencriptar{
+    max-width: 328px;
+    min-width: 160px;
+    width: 40%;
+    height: 67px;
+    border-radius:24px;
+    background-color: #ced7e2;
+    color: #0A3871;
+    font-size: 16px;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+    transition: 1s all ;
+    
+}
+
+.btn-desencriptar:hover{
+    transform: scale(1.1);
+    background-color: #646566;
+    color: #fefefe;
+    border: none;
+}
+
+.derecho {
+    background-color: #fefefe;
+    height: calc(100% + 48px);
+    border-radius: 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    padding: 32px;
+    align-items: center;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.562);
+    transition: 600ms;
+}
+
+.derecho:hover {
+    transform: translateY(-3%);
+}
+
+.derecho.comportamiento-final{
+    justify-content: space-between;
+}
+
+.munheco {
+    width: 100%;
+}
+
+.oculto {
+    display: none;
+}
+
+.mensaje-final{
+    resize: none;
+    background: none;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+.mensaje-final::placeholder{
+    color: #000000;
+
+}
+
+.mensaje-final.comportamiento-final{
+    text-align: left;
+    font-weight: lighter;
+    height: 80%;
+}
+
+.text-info{
+    font-size: 16px;
+    color: #6c8097;
+    text-align: center;
+}
+
+.btn-copiar {
+    width: 100%;
+    max-width: 328px;
+    min-width: 160px;
+    width: 40%;
+    height: 67px;
+    border-radius:24px;
+    background-color: transparent;
+    color: #0A3871;
+    font-size: 16px;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+    transition: 1s all ;
+    display: none;
+}
+
+.btn-copiar:hover{
+    transform: scale(1.1);
+    background-color: #646566;
+    color: #fefefe;
+    border: none;
+
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    box-sizing: border-box;
+    background-color: rgb(160, 160, 157);
+    color: #000000;
+    font-style: italic;
+    margin: 25px 0 0 0;
+    padding: 20px;
+    opacity: 70%;
+}
+
+
+@media screen and (max-width:800px ){
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: 75% auto;
+        width: auto;
+        margin: auto 40px;
+        
+    }
+
+    .botones {
+        justify-content: center;
+    }
+
+    .btn-desencriptar, .btn-encriptar {
+        width: 45%;
+    }
+
+    .derecho {
+        height: 100%;
+    }
+
+    .munheco {
+        display: none;
+
+    }
+
+}
+@media screen and (max-width:500px ){
+
+    .contenedor {
+        margin: 16px;
+    }
+
+    .btn-desencriptar, .btn-encriptar {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+
+
+
+
